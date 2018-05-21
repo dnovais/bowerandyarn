@@ -13,20 +13,6 @@
 //= require rails-ujs
 //= require jquery/dist/jquery
 //= require lodash/lodash
+//= require jquery.scrollTo/jquery.scrollTo
+//= require moment/moment
 //= require turbolinks
-//= require_tree .
-$(document).ready(function(){
-
-	if (window.jQuery) {
-		// jQuery is loaded  
-		console.log("Yeah!");
-	} else {
-		// jQuery is not loaded
-		console.log("Doesn't Work");
-	}
-
-	var teste = [1, 2, 3, 4, 5]
-	_.each(teste, function(t){
-		console.log(t)
-	})
-})

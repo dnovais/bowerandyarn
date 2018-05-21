@@ -1,2 +1,30 @@
-<h1>Site#index</h1>
-<p id="paragraph">Find me in app/views/site/index.html.erb</p>
+<section id="main" class="hero is-primary is-fullheight">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title is-1">
+				Rails + Bower e Yarn Juntos!
+			</h1>
+			<h2 class="subtitle">
+				Neste projeto usei bower e yarn para carregar bibliotecas necessarias.
+			</h2>
+			<a id="button_libs" class="button is-medium">Bibliotecas usadas</a>
+			<div id="clock">Agora são: ...</div>
+		</div>
+	</div>
+</section>
+<section id="libs" class="hero is-Light is-fullheight">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title is-1">
+				Bibliotecas usadas.
+			</h1>
+			<ol id="lib_lists"></ol>
+			<hr>
+			<a id="button_main" class="button is-medium">Home</a>
+		</div>
+	</div>
+</section>
+
+<% content_for(:javascripts) do %>
+  <%= javascript_include_tag 'site' %>
+<% end %>
